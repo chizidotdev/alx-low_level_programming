@@ -1,7 +1,7 @@
 /**
  * check - checks for the square root
  * @a:int
- * @b:int 
+ * @b:int
  *
  * Return: int
  */
