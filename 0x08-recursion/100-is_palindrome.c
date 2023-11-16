@@ -19,11 +19,13 @@ int _stringlen(char *s)
 */
 int check(char *s, int i, int j)
 {
-	if (s[i] != s[j])
+	if (s[i] == s[j])
+		if (i > j / 2)
+			return (1);
+		else
+			return (check(s, 1 + 1, j - 1));
+	else
 		return (0);
-	if (i >= j)
-		return (1);
-	return (check(s, i + 1, j - 1));
 }
 
 /**
@@ -34,7 +36,7 @@ int check(char *s, int i, int j)
 int is_palindrome(char *s)
 {
 	int i = 0;
-	int j = _stringlen(s) - 2;
+	int j = _stringlen(s) - 1;
 
 	return (check(s, i, j));
 }
