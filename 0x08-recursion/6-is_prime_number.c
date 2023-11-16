@@ -14,10 +14,10 @@ int check(int a, int b)
 }
 
 /**
-* is_prime_number - checks if the number is prime 
+* is_prime_number - checks if the number is prime
 * @n:int
 * Return: int
-*/ 
+*/
 int is_prime_number(int n)
 {
 	if (n <= 1)
