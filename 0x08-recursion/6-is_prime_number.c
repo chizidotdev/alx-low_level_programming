@@ -6,11 +6,11 @@
 */
 int check(int a, int b)
 {
-    if (a == b)
-        return (1);
-    if (b % a == 0)
-        return (0);
-    return (check(a + 1, b));
+	if (a == b)
+		return (1);
+	if (b % a == 0)
+		return (0);
+	return (check(a + 1, b));
 }
 
 /**
@@ -20,7 +20,7 @@ int check(int a, int b)
 */ 
 int is_prime_number(int n)
 {
-    if (n <= 1)
-        return (0);
-    return (check(2, n));
+	if (n <= 1)
+		return (0);
+	return (check(2, n));
 }
